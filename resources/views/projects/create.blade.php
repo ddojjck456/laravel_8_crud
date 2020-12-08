@@ -1,10 +1,10 @@
 @extends('layouts.app')
-
+@section('title','新增')
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Add New Project</h2>
+                <h2>新增專案</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
@@ -28,31 +28,31 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" class="form-control" placeholder="Name">
+                    <strong>姓名:</strong>
+                    <input type="text" name="name" class="form-control" placeholder="姓名">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Introduction:</strong>
-                    <textarea class="form-control" style="height:50px" name="introduction"
-                        placeholder="Introduction"></textarea>
+                    <strong>簡介:</strong>
+                    <textarea class="form-control" style="height:50px" name="Introduction"
+                        placeholder="簡介"></textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    <input type="text" name="location" class="form-control" placeholder="Location">
+                    <strong>位置:</strong>
+                    <input type="text" name="location" class="form-control" placeholder="位置">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Cost:</strong>
-                    <input type="number" name="cost" class="form-control" placeholder="Cost">
+                    <strong>價格:</strong>
+                    <input type="number" name="cost" class="form-control" placeholder="價格">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">送出</button>
             </div>
         </div>
 
